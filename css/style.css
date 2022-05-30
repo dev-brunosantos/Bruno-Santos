@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--verde-neon);
+}
+:root {
+    --verde-neon: #39FF14;
+}
+@media screen and (min-width:900px) and (max-width: 2000px) {
+    body {
+        min-width: 900px;
+        max-width: 2000px;
+        height: 3000px;
+        margin: 0 auto;
+        background-color: black;
+    }
+    /* ----- CABEÇALHO E MENU PRINCIPAL ------ */
+header {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+}
+nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.logo {
+    font-size: 50px;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 200px;
+}
+.menu {
+    width: 120px;
+    height: 40px;
+    border: double transparent;
+    border-radius: 10px;
+    /* margin-right: -100px; */
+    font-size: 22px;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu:hover {
+    transition: 0.5s;
+    border: double;
+    font-size: 20px;
+}
+/* ________________________ */
+
+/* CONTEÚDO PRINCIPAL */
+main {
+    width: 100%;
+    height: 2000px;
+    padding-top: 70px;
+}
+.conteudos {
+    width: 100%;
+    height: 600px;
+    z-index: 3;
+}
+/* INICIO */
+#inicio {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    background-image: url(../img/liguagens-de-programacao.jpg);
+    background-size: 100% 100%;
+}
+.inicio-textos {
+    width: 45%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: aparecer 5s linear;
+}
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.inicio-textos h1, p {
+    margin: 30px;
+}
+.inicio-textos h1 {
+    font-size: 80px;
+    text-align: center;
+}
+.inicio-textos p {
+    font-size: 50px;
+}
+.inicio-textos a {
+    margin-bottom: 15px;
+}
+input[type=button] {
+    background-color: var(--verde-neon);
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    width: 120px;
+    height: 35px;
+    border: solid var(--verde-neon);
+    border-radius: 10px;
+}
+/* SOBRE */
+#sobre {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 80px;
+}
+#sobre img.bruno {
+    width: 300px;
+    height: 300px;
+    border: 1px solid;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0px 0px 80px var(--verde-neon);
+}
+.sobre-mim {
+    width: 50%;
+    border: 5px double;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.sobre-tecnologias {
+    width: 90%;
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+.tecnologias, .tecnologias-informacoes {
+    width: 200px;
+    height: 90%;
+    /* border: solid; */
+}
+#html, #css, #js {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    border: solid;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.linguagens {
+    font-size: 120px;
+}
+.linguagens:hover {
+    transition: 0.5s;
+    font-size: 150px;
+}
+/* PEOJETOS */
+#projetos {
+    width: 100%;
+    padding-top: 80px;
+    background-color: var(--verde-neon);
+}
+.meus-projetos {
+    width: 90%;
+    height: 100%;
+    border: solid;
+    border-radius: 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+}
+.projetos {
+    width: 90%;
+    /* border: solid; */
+    border-radius: 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.projetos-feitos {
+    width: 250px;
+    height: 180px;
+    border: solid;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.projetos-feitos img {
+    width: 90%;
+    height: 50%;
+    opacity: 0.5;
+}
+.projetos-feitos img:hover {
+    transition: 0.5s;
+    width: 100%;
+    height: 60%;
+    opacity: 1;
+}
+.invisivel {
+    display: none;
+}
+.projetos input[type=button] {
+    margin-top: 20px;
+}
+/* CONTATOS */
+#contatos {
+    background-image: url(../img/notebook.png);
+    background-size: 50% 550px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    /* background-image: linear-gradient(65deg, black, var(--verde-neon), black); */
+    padding-top: 80px;
+}
+/* _________________________________ */
+
+.animar {
+    animation: animar 1s linear;
+}
+@keyframes animar {
+    from {
+        margin-top: 700px;
+    }
+    to {
+        margin-top: 5px;
+    }
+}
+}
+

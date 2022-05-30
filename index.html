@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/styleP.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Bruno Santos</title>
+
+</head>
+<body>
+
+    <audio src="../Portifolio/teste.mp3" autoplay loop="29"></audio>
+
+    <header>
+        <nav>
+            <a href="#" class="logo" onclick="teste()">Bruno Santos</a>
+
+            <a href="#inicio" class="menu">Inicio</a>
+            <a href="#sobre" class="menu">Sobre Mim</a>
+            <a href="#projetos" class="menu">Projetos</a>
+            <a href="#contatos" class="menu">Contatos</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="conteudos">
+            <div class="inicio-textos">
+                <h1>Olá, Eu sou <br> Bruno Santos</h1>
+                <p>E sou um Web Designer</p>
+
+                <a href="#">
+                    <input type="button" value="Resumo" onclick="tela2()">
+                </a>
+
+                <a href="#">
+                    <input type="button" value="Fale comigo" onclick="tela4()">
+                </a>
+            </div>
+
+        </section>
+
+        <section id="sobre" class="conteudos">
+            <img src="img/Bruno1.png" alt="" class="bruno">
+
+            <div class="sobre-mim">
+                <h1 class="sobre">Sobre Mim</h1>
+
+                <p>
+                    Oi, meu nome é Bruno Santos e eu sou músico e estudante de desenvolvimento web, uma área em que nem percebo o tempo passar enquanto estudo ou pratico. 
+                    Ainda estou aprimorando minhas habilidades mas já estou apto a construir um website não muito complexo 
+                    utilizando as tecnologias HTML, CSS e JavaScript.
+                </p>
+
+                <p>
+                    Estou cursando o primeiro período de análise e desenvolvimento de sistemas pela universidade Estácio de Sá e 
+                    pretendo me formar no inicio de 2024, enquanto isso, desenvolvo websites colocando todo 
+                    meu aprendizado em prática.
+                </p>
+
+                <p>
+                    Estou a procura de um estágio, clt ou trainee na área para poder aprender mais e mais sobre 
+                    desenvolvimento e poder contribuir com o meu conhecimento e fazer a diferença nesse mundo.
+                </p>
+            </div>
+
+            <div class="sobre-tecnologias">
+
+                <div id="html" class="tecnologias">
+
+                    <i class="fa-brands fa-html5 linguagens"></i>
+                    
+                </div>
+
+                <div id="css" class="tecnologias">
+
+                    <i class="fa-brands fa-css3-alt linguagens"></i>
+
+                </div>
+
+                <div id="js" class="tecnologias">
+
+                    <i class="fa-brands fa-js-square linguagens"></i>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section id="projetos" class="conteudos">
+            <div class="meus-projetos">
+                <h1>Meus Projetos</h1>
+
+                <div class="projetos">
+                    <div class="projetos-feitos">
+                        <img src="img/projetos/reciclarte.png" alt="">
+                    </div>
+
+                    <div class="projetos-feitos">
+                        <img src="img/projetos/nubank.png" alt="">
+                    </div>
+
+                    <div class="projetos-feitos">
+                        <img src="img/projetos/doce-onda.png" alt="">
+                    </div>
+
+                    <div class="projetos-feitos">
+
+                    </div>
+
+                    <div class="projetos-feitos invisivel">
+                        <img src="img/projetos/reciclarte.png" alt="">
+                    </div>
+
+                    <div class="projetos-feitos invisivel">
+                        <img src="img/projetos/nubank.png" alt="">
+                    </div>
+
+                    <div class="projetos-feitos invisivel">
+                        <img src="img/projetos/doce-onda.png" alt="">
+                    </div>
+
+                    <div class="projetos-feitos invisivel">
+
+                    </div>
+
+                    <input id="botao" type="button" value="Mostrar Mais" onclick="maisProjetos()">
+                </div>
+            </div>
+        </section>
+
+        <section id="contatos" class="conteudos"></section>
+    </main>
+
+
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
