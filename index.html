@@ -7,7 +7,7 @@
     
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/styleP.css">
-    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
 
     <title>Bruno Santos</title>
 
@@ -17,28 +17,31 @@
     <audio src="../Portifolio/teste.mp3" autoplay loop="29"></audio>
 
     <header>
+
+        <a href="#" class="logoMobile" onclick="abrirMenu()">Bruno Santos</a>
+
         <nav>
             <a href="#" class="logo" onclick="teste()">Bruno Santos</a>
 
-            <a href="#inicio" class="menu">Inicio</a>
-            <a href="#sobre" class="menu">Sobre Mim</a>
-            <a href="#projetos" class="menu">Projetos</a>
-            <a href="#contatos" class="menu">Contatos</a>
+            <a href="#inicio" class="menu" onclick="inicio()">Inicio</a>
+            <a href="#sobre" class="menu" onclick="sobre()">Sobre Mim</a>
+            <a href="#projetos" class="menu" onclick="projetos()">Projetos</a>
+            <a href="#contatos" class="menu" onclick="contatos()">Contatos</a>
         </nav>
     </header>
 
-    <main>
+    <main onclick="fecharMenu()">
         <section id="inicio" class="conteudos">
             <div class="inicio-textos">
                 <h1>Olá, Eu sou <br> Bruno Santos</h1>
                 <p>E sou um Web Designer</p>
 
-                <a href="#">
-                    <input type="button" value="Resumo" onclick="tela2()">
+                <a href="#sobre">
+                    <input type="button" value="Resumo" >
                 </a>
 
-                <a href="#">
-                    <input type="button" value="Fale comigo" onclick="tela4()">
+                <a href="#contatos">
+                    <input type="button" value="Fale comigo">
                 </a>
             </div>
 
@@ -48,7 +51,7 @@
             <img src="img/Bruno1.png" alt="" class="bruno">
 
             <div class="sobre-mim">
-                <h1 class="sobre">Sobre Mim</h1>
+                <h1 class="sobre"> --- Sobre Mim ---</h1>
 
                 <p>
                     Oi, meu nome é Bruno Santos e eu sou músico e estudante de desenvolvimento web, uma área em que nem percebo o tempo passar enquanto estudo ou pratico. 
@@ -68,23 +71,42 @@
                 </p>
             </div>
 
+            <h1 id="sobre-tecnologias">--- Tecnologias ---</h1> <!-- APARECE APENAS EM PEQUENAS TELAS -->
+
             <div class="sobre-tecnologias">
 
                 <div id="html" class="tecnologias">
 
                     <i class="fa-brands fa-html5 linguagens"></i>
+                    HTML5
                     
                 </div>
 
                 <div id="css" class="tecnologias">
 
                     <i class="fa-brands fa-css3-alt linguagens"></i>
+                    CSS3
 
                 </div>
 
                 <div id="js" class="tecnologias">
 
                     <i class="fa-brands fa-js-square linguagens"></i>
+                    JavaScript
+
+                </div>
+
+                <div id="git" class="tecnologias">
+
+                    <i class="fa-brands fa-git-alt"></i>
+                    Git
+
+                </div>
+
+                <div id="nodejs" class="tecnologias">
+
+                    <i class="fa-brands fa-node-js"></i>
+                    Node.Js
 
                 </div>
 
@@ -93,7 +115,7 @@
 
         <section id="projetos" class="conteudos">
             <div class="meus-projetos">
-                <h1>Meus Projetos</h1>
+                <h1>--- Meus Projetos ---</h1>
 
                 <div class="projetos">
                     <div class="projetos-feitos">
@@ -109,7 +131,7 @@
                     </div>
 
                     <div class="projetos-feitos">
-
+                        <img src="img/liguagens-de-programacao.jpg" alt="">
                     </div>
 
                     <div class="projetos-feitos invisivel">
@@ -133,7 +155,9 @@
             </div>
         </section>
 
-        <section id="contatos" class="conteudos"></section>
+        <section id="contatos" class="conteudos">
+            <img src="img/notebook.png" alt="">
+        </section>
     </main>
 
 

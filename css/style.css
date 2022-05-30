@@ -4,9 +4,11 @@
     box-sizing: border-box;
     color: var(--verde-neon);
 }
+/* ----- PALHETA DE CORES ----- */
 :root {
     --verde-neon: #39FF14;
 }
+/* ____________________________ */
 @media screen and (min-width:900px) and (max-width: 2000px) {
     body {
         min-width: 900px;
