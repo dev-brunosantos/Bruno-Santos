@@ -38,5 +38,6 @@ function contatos() {
     tela1.style.display = "none"
     tela2.style.display = "none"
     tela3.style.display = "none"
-    tela4.style.display = "block"
+    tela4.style.display = "flex"
 }
+// ______________________________________________
