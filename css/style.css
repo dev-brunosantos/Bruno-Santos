@@ -20,11 +20,15 @@
     /* ----- CABEÇALHO E MENU PRINCIPAL ------ */
 header {
     width: 100%;
-    height: 50px;
+    min-height: 50px;
     background-color: black;
     position: fixed;
     top: 0px;
     z-index: 1;
+}
+
+.barra-menu {
+    display: none;
 }
 .logoMobile {
     display: none;
@@ -71,7 +75,7 @@ main {
 }
 .conteudos {
     width: 100%;
-    height: 600px;
+    min-height: 600px;
     z-index: 3;
 }
 /* INICIO */
@@ -86,7 +90,7 @@ main {
 }
 .inicio-textos {
     width: 45%;
-    height: 550px;
+    min-height: 550px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -102,10 +106,10 @@ main {
 }
 .inicio-textos h1, p {
     margin: 30px;
+    text-align: center;
 }
 .inicio-textos h1 {
     font-size: 80px;
-    text-align: center;
 }
 .inicio-textos p {
     font-size: 50px;
@@ -126,7 +130,7 @@ input[type=button] {
 /* SOBRE */
 #sobre {
     width: 100%;
-    height: 700px;
+    min-height: 700px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -164,12 +168,12 @@ input[type=button] {
     align-items: center;
     position: relative;
 }
-.tecnologias, .tecnologias-informacoes {
+.tecnologias, .aprender {
     width: 200px;
     height: 90%;
     /* border: solid; */
 }
-#html, #css, #js, #git, #nodejs {
+#html, #css, #js, #git, #nodejs,#bootstrap, #angular, #react {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -191,56 +195,86 @@ input[type=button] {
 /* PEOJETOS */
 #projetos {
     width: 100%;
+    max-height: 850px;
     padding-top: 80px;
-    background-color: var(--verde-neon);
+    padding-bottom: 20px;
+    /* background-color: var(--verde-neon); */
+    background-color: #37ff1492;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
-.meus-projetos {
+#projetos h1 {
+    color: black;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+.projetos, .menos {
     width: 90%;
-    height: 100%;
-    border: solid;
-    border-radius: 20px;
-    margin: 0 auto;
+    height: 300px;
+    border: solid black;
+    border-radius: 10px;
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.projetos-feitos, .embreve {
+    min-width: 150px;
+    max-width: 250px;
+    height: 250px;
+    border: 4px double var(--verde-neon);
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background-color: black;
+    opacity: 0.3;
 }
-.projetos {
-    width: 90%;
-    /* border: solid; */
-    border-radius: 10px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.projetos-feitos {
-    width: 250px;
-    height: 180px;
-    border: solid;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.projetos-feitos img {
-    width: 90%;
-    height: 50%;
-    opacity: 0.5;
-}
-.projetos-feitos img:hover {
+.projetos-feitos:hover {
     transition: 0.5s;
-    width: 100%;
-    height: 60%;
     opacity: 1;
 }
-.invisivel {
-    display: none;
+.projetos-feitos a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
 }
-.projetos input[type=button] {
-    margin-top: 20px;
+.projetos-feitos img {
+    max-width: 90%;
+    /* min-height: 80px; */
+    max-height: 110px;
+}
+.projetos-feitos p {
+    min-width: 150px;
+    min-height: 30px;
+    border: solid transparent;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+.menos {
+    display: none;
+    transition: 1s;
+    opacity: 0;
+    width: 90%;
+    height: 0px;
+}
+.mais {
+    display: flex;
+    transition: 1s;
+    opacity: 1;
+    width: 90%;
+    height: 300px;
 }
 /* CONTATOS */
 #contatos {

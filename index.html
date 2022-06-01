@@ -18,7 +18,11 @@
 
     <header>
 
-        <a href="#" class="logoMobile" onclick="abrirMenu()">Bruno Santos</a>
+        <i class="fas fa-bars barra-menu" onclick="abrirMenu()"></i>
+
+        <a href="#" class="logoMobile">
+            <img src="img/bslogo.png" alt="">
+        </a>
 
         <nav>
             <a href="#" class="logo" onclick="teste()">Bruno Santos</a>
@@ -54,7 +58,7 @@
                 <h1 class="sobre"> --- Sobre Mim ---</h1>
 
                 <p>
-                    Oi, meu nome é Bruno Santos e eu sou músico e estudante de desenvolvimento web, uma área em que nem percebo o tempo passar enquanto estudo ou pratico. 
+                    Olá, meu nome é Bruno Santos, sou músico e estudante de desenvolvimento web, uma área em que nem percebo o tempo passar enquanto estudo ou pratico. 
                     Ainda estou aprimorando minhas habilidades mas já estou apto a construir um website não muito complexo 
                     utilizando as tecnologias HTML, CSS e JavaScript.
                 </p>
@@ -66,12 +70,12 @@
                 </p>
 
                 <p>
-                    Estou a procura de um estágio, clt ou trainee na área para poder aprender mais e mais sobre 
+                    Estou a procura de um estágio na área para poder aprender mais e mais sobre 
                     desenvolvimento e poder contribuir com o meu conhecimento e fazer a diferença nesse mundo.
                 </p>
             </div>
 
-            <h1 id="sobre-tecnologias">--- Tecnologias ---</h1> <!-- APARECE APENAS EM PEQUENAS TELAS -->
+            <h1 id="sobre-tecnologias">Tecnologias Que Utilizo</h1> <!-- APARECE APENAS EM PEQUENAS TELAS -->
 
             <div class="sobre-tecnologias">
 
@@ -103,56 +107,92 @@
 
                 </div>
 
-                <div id="nodejs" class="tecnologias">
+            </div>
 
-                    <i class="fa-brands fa-node-js linguagens"></i>
-                    Node.Js
+            <h1 id="sobre-tecnologias">Tecnologias Que Desejo Aprender</h1> <!-- APARECE APENAS EM PEQUENAS TELAS -->
+            <div class="sobre-tecnologias">
 
+                <div id="bootstrap" class="aprender">
+                    <i class="fa-brands fa-bootstrap linguagens"></i>
+                    Bootstrap
                 </div>
 
+                <div id="react" class="aprender">
+                    <i class="fa-brands fa-react linguagens"></i>
+                    React
+                </div>
+
+                <div id="angular" class="aprender">
+                    <i class="fa-brands fa-angular linguagens"></i>
+                    Angular
+                </div>
+
+                <div id="nodejs" class="aprender">
+                    <i class="fa-brands fa-node-js linguagens"></i>
+                    Node.Js
+                </div>
             </div>
         </section>
 
         <section id="projetos" class="conteudos">
-            <div class="meus-projetos">
-                <h1>--- Meus Projetos ---</h1>
 
-                <div class="projetos">
-                    <div class="projetos-feitos">
-                        <img src="img/projetos/reciclarte.png" alt="">
-                    </div>
-
-                    <div class="projetos-feitos">
+            <h1>---Meus Projetos---</h1>
+            
+            <div class="projetos">
+                <div class="projetos-feitos">
+                    <a href="#">
                         <img src="img/projetos/nubank.png" alt="">
-                    </div>
+    
+                        <p>Clone do Site da Nubank</p>
+                    </a>
+                    
+                </div>
 
-                    <div class="projetos-feitos">
-                        <img src="img/projetos/doce-onda.png" alt="">
-                    </div>
-
-                    <div class="projetos-feitos">
-                        <img src="img/liguagens-de-programacao.jpg" alt="">
-                    </div>
-
-                    <div class="projetos-feitos invisivel">
+                <div class="projetos-feitos">
+                    <a href="#">
                         <img src="img/projetos/reciclarte.png" alt="">
-                    </div>
+    
+                        <p>Site do Projeto Social ReciclArte</p>
+                    </a>
+                </div>
 
-                    <div class="projetos-feitos invisivel">
-                        <img src="img/projetos/nubank.png" alt="">
-                    </div>
-
-                    <div class="projetos-feitos invisivel">
+                <div class="projetos-feitos">
+                    <a href="#">
                         <img src="img/projetos/doce-onda.png" alt="">
-                    </div>
+    
+                        <p>Site da Confeitaria Doce Onda</p>
+                    </a>
+                </div>
 
-                    <div class="projetos-feitos invisivel">
-
-                    </div>
-
-                    <input id="botao" type="button" value="Mostrar Mais" onclick="maisProjetos()">
+                <div class="projetos-feitos">
+                    <a href="#">
+                        <img src="img/projetos/Rmark5.png" alt="">
+    
+                        <p>Site IPTV do Rmark Tv</p>
+                    </a>
                 </div>
             </div>
+
+            <div class="projetos menos">
+                <div class="embreve">
+                    <h2>Embreve</h2>
+                </div>
+
+                <div class="embreve">
+                    <h2>Embreve</h2>
+                </div>
+
+                <div class="embreve">
+                    <h2>Embreve</h2>
+                </div>
+
+                <div class="embreve">
+                    <h2>Embreve</h2>
+                </div>
+            </div>
+
+            <input id="btn" type="button" value="Mais Projetos">
+
         </section>
 
         <section id="contatos" class="conteudos">
@@ -160,10 +200,10 @@
         
             <div class="menu-contatos">
                 <div class="menuPrincipal contatosGerais">
-                    <a href="#inicio" class="menu" onclick="inicio()">Inicio</a>
-                    <a href="#sobre" class="menu" onclick="sobre()">Sobre Mim</a>
-                    <a href="#projetos" class="menu" onclick="projetos()">Projetos</a>
-                    <a href="#contatos" class="menu" onclick="contatos()">Contatos</a>
+                    <a href="" class="menu" onclick="inicio()">Inicio</a>
+                    <a href="" class="menu" onclick="sobre()">Sobre Mim</a>
+                    <a href="" class="menu" onclick="projetos()">Projetos</a>
+                    <a href="" class="menu" onclick="contatos()">Contatos</a>
                 </div>
 
                 <div class="redesSociais contatosGerais">

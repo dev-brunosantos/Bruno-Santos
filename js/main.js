@@ -31,7 +31,7 @@ function sobre() {
 function projetos() {
     tela1.style.display = "none"
     tela2.style.display = "none"
-    tela3.style.display = "block"
+    tela3.style.display = "flex"
     tela4.style.display = "none"
 }
 function contatos() {
@@ -40,4 +40,19 @@ function contatos() {
     tela3.style.display = "none"
     tela4.style.display = "flex"
 }
-// ______________________________________________
+// _____________________________________________
+
+var botao = document.getElementById('btn');
+var txt = botao.value;
+
+botao.addEventListener('click', ()=> {
+    
+    let mais = document.querySelectorAll('.projetos')
+
+    if (mais[1].classList.contains('menos')) {
+        mais[1].classList.add('mais')
+        mais[1].classList.remove('menos')
+    }
+    
+
+})

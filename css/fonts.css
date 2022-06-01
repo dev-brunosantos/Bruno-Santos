@@ -77,3 +77,15 @@
 
 .fa-node-js:before {
   content: "\f3d3"; }
+/* BOOTSTRAP */
+.fa-bootstrap:before {
+  content: "\f836"; 
+}
+/* REACT */
+.fa-react:before {
+  content: "\f41b"; 
+}
+/* ANGULAR */
+.fa-angular:before {
+  content: "\f420"; 
+}
