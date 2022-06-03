@@ -197,11 +197,12 @@
         flex-direction: column;
         align-items: center;
     }
-    img {
+    #sobre img {
         width: 250px;
         height: 350px;
         border: 5px double;
         border-radius: 20px;
+        background-image: linear-gradient(-65deg, black, var(--verde-neon));
     }
     .sobre-mim, .sobre-tecnologias {
         display: flex;
@@ -254,9 +255,6 @@
         font-size: 100px;
     }
     /* PROJETOS */
-    #inicio, #sobre {
-        display: none;
-    }
     #projetos {
         width: 100%;
         min-height: 850px;
@@ -264,7 +262,8 @@
         padding-bottom: 20px;
         background-color: var(--verde-neon);
         /* background-color: #37ff1492; */
-        display: flex;
+        /* display: flex; */
+        display: none;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
@@ -347,16 +346,45 @@
     }
     .embreve {
         width: 250px;
+        height: 250px;
+        opacity: 0.4;
+    }
+    .embreve:hover {
+        transition: 1s;
+        opacity: 1;
+    }
+    .embreve h2 {
+        font-size: 30px;
+        text-transform: uppercase;
+        animation: animacao 4s linear infinite;
+        animation-delay: 2s;
+    }
+    @keyframes animacao {
+        0% {
+            transform: scaleX(2);
+        }
+        50% {
+            transform: scaley(4);
+            /* transform: scaleX(1); */
+        }
+        100% {
+            transform: scaleX(2);
+        }
     }
     #btn {
         background-color: black;
         color: var(--verde-neon);
         width: 180px;
         height: 50px;
+        border-radius: 10px;
         padding: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
     }
     /* CONTATOS */
     #contatos {

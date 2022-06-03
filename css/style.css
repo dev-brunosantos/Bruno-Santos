@@ -276,6 +276,47 @@ input[type=button] {
     width: 90%;
     height: 300px;
 }
+.embreve {
+    width: 250px;
+    height: 250px;
+    opacity: 0.4;
+}
+.embreve:hover {
+    transition: 1s;
+    opacity: 1;
+}
+.embreve h2 {
+    font-size: 25px;
+    text-transform: uppercase;
+    animation: animacao 4s linear infinite;
+    animation-delay: 2s;
+}
+@keyframes animacao {
+    0% {
+        transform: scaley(2);
+    }
+    50% {
+        transform: scaleY(5);
+    }
+    100% {
+        transform: scaleY(2);
+    }
+}
+#btn {
+    background-color: black;
+    color: var(--verde-neon);
+    width: 180px;
+    height: 50px;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
 /* CONTATOS */
 #contatos {
     background-image: url(../img/notebook.png);
@@ -370,18 +411,6 @@ td input[type=text] {
     width: 90%;
     height: 100px;
 }
-/* _________________________________ */
+}
 
-.animar {
-    animation: animar 1s linear;
-}
-@keyframes animar {
-    from {
-        margin-top: 700px;
-    }
-    to {
-        margin-top: 5px;
-    }
-}
-}
 

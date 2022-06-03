@@ -43,6 +43,7 @@ function contatos() {
 // _____________________________________________
 
 var botao = document.getElementById('btn');
+var btn = document.querySelector('.botao');
 var txt = botao.value;
 
 botao.addEventListener('click', ()=> {
@@ -52,7 +53,12 @@ botao.addEventListener('click', ()=> {
     if (mais[1].classList.contains('menos')) {
         mais[1].classList.add('mais')
         mais[1].classList.remove('menos')
+        btn.innerHTML="Mostrar Menos"
     }
-    
+    else {
+        mais[1].classList.add('menos')
+        mais[1].classList.remove('mais')
+        btn.innerHTML="Mais Projetos"
+    }
 
 })
