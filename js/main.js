@@ -64,7 +64,7 @@ botao.addEventListener('click', ()=> {
 })
 
 // CONFIGURAÇÃO DA TELA PRINCIPAL 
-// EFEITO MÁQUINA DE ESCREVER
+// EFEITO MÁQUINA DE ESCREVER FEITO COM JS E CSS
 
 function typeWrite(elemento) {
     const textoArray = elemento.innerHTML.split('');
