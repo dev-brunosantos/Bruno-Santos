@@ -63,7 +63,7 @@ botao.addEventListener('click', ()=> {
 
 })
 
-// CONFIGURAÇÃO TA TELA PRINCIPAL 
+// CONFIGURAÇÃO DA TELA PRINCIPAL 
 // EFEITO MÁQUINA DE ESCREVER
 
 function typeWrite(elemento) {

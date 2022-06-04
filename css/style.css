@@ -425,6 +425,13 @@ td input[type=text] {
     width: 90%;
     height: 100px;
 }
+/* ___________________________ */
+
+/* RODAPÉ DO SITE */
+footer {
+    display: none;
+}
+/* _________________________ */
 }
 
 
