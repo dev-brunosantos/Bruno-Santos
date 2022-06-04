@@ -62,3 +62,17 @@ botao.addEventListener('click', ()=> {
     }
 
 })
+
+// CONFIGURAÇÃO TA TELA PRINCIPAL 
+// EFEITO MÁQUINA DE ESCREVER
+
+function typeWrite(elemento) {
+    const textoArray = elemento.innerHTML.split('');
+    elemento.innerHTML = '';
+    textoArray.forEach((letra, i) => {
+        setTimeout(() => elemento.innerHTML += letra, 100 * i);
+    });
+}
+
+const titulo = document.querySelector('h1');
+typeWrite(titulo);

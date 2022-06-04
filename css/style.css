@@ -94,15 +94,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    animation: aparecer 5s linear;
-}
-@keyframes aparecer {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+
 }
 .inicio-textos h1, p {
     margin: 30px;
@@ -110,7 +102,24 @@ main {
 }
 .inicio-textos h1 {
     font-size: 80px;
+    width: 82%;
+    height: 200px;
 }
+.inicio-textos h1::after {
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: piscar .5s infinite;
+}
+@keyframes piscar {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
 .inicio-textos p {
     font-size: 50px;
 }
@@ -153,6 +162,11 @@ input[type=button] {
     flex-direction: column;
     align-items: center;
     text-align: center;
+}
+.sobre-mim p {
+    width: 80%;
+    text-align: justify;
+    text-indent: 25px;
 }
 
 /* OBS: ESTA LINHA DE CÓDIGOS SO APARECERÁ EM PEQUENAS TELAS */
